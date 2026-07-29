@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutCentral | O Seu Blog de Futebol</title>
+    <title>FutCentral | Portal Completo de Futebol 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header" id="inicio">
-        <div class="logo">
-            <h1>FUT<span>CENTRAL</span></h1>
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <span class="badge live">AO VIVO</span>
+            <span>21ª Rodada: Inter 1 x 2 Flamengo</span> |
+            <span>Vitória 0 x 1 Palmeiras</span> |
+            <span>Fluminense 2 x 0 Bahia</span> |
+            <span>Corinthians x Athletico-PR (Hoje - 19h30)</span> |
+            <span>Coritiba x Cruzeiro (Hoje - 21h30)</span>
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar notícias, times...">
-            <button>Buscar</button>
+    </div>
+
+    <header class="main-header" id="inicio">
+        <div class="header-container">
+            <div class="logo">
+                <h1>FUT<span>CENTRAL</span></h1>
+                <p class="tagline">O portal definitivo do futebol mundial</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar notícias, times, jogadores...">
+                <button type="button">Buscar</button>
+            </div>
         </div>
     </header>
 
     <nav class="main-nav">
         <ul>
             <li><a href="#inicio" class="active">Início</a></li>
-            <li><a href="#brasileirao">Brasileirão</a></li>
+            <li><a href="#brasileirao">Brasileirão 2026</a></li>
             <li><a href="#champions">Champions League</a></li>
             <li><a href="#mercado">Mercado da Bola</a></li>
             <li><a href="#selecao">Seleção Brasileira</a></li>
-            <li><a href="#opiniao">Opinião</a></li>
+            <li><a href="#opiniao">Opinião & Tática</a></li>
+            <li><a href="#tabela">Tabela & Classificação</a></li>
         </ul>
     </nav>
 
@@ -33,118 +48,63 @@
         
         <main class="content-area">
             
-            <section class="featured-post" id="champions">
-                <span class="tag tag-yellow">Champions League</span>
-                <h2>Final da Champions League: O que esperar do grande confronto do ano</h2>
-                <p class="post-meta">Publicado em 20 de Outubro • Por Lucas Silva</p>
-                <p class="excerpt">Análise tática completa das equipes, os principais jogadores a serem observados e os palpites dos nossos especialistas para a decisão.</p>
-                <a href="#opiniao" class="btn-read">Ler Matéria Completa</a>
+            <section class="featured-banner">
+                <div class="featured-badge">EM DESTAQUE</div>
+                <h2>Espanha supera Argentina na prorrogação e conquista o bicampeonato mundial em 2026</h2>
+                <p class="post-meta">Publicado há 2 horas • Por Redação FutCentral</p>
+                <p class="excerpt">
+                    Em uma final histórica no MetLife Stadium com público recorde, a seleção espanhola venceu a Argentina por 2 a 1 na prorrogação. Confira a análise detalhada da partida, atuação dos jovens destaques e os desdobramentos do torneio norte-americano.
+                </p>
+                <a href="#opiniao" class="btn-primary">Ler Análise Completa</a>
             </section>
 
             <section class="section-block" id="brasileirao">
-                <h3>Brasileirão Série A</h3>
-                <article class="card main-card">
-                    <span class="tag tag-purple">Rodada Decisiva</span>
-                    <h4>Rodada eletrizante altera a liderança do campeonato</h4>
-                    <p class="post-meta">Há 2 horas</p>
-                    <p>Com tropeço do líder fora de casa, a disputa pelo título fica ainda mais aberta na reta final. Confira as notas dos jogadores e os lances mais polêmicos da rodada.</p>
-                </article>
-            </section>
+                <div class="section-header">
+                    <h3>Brasileirão Série A 2026</h3>
+                    <span class="subtitle">21ª Rodada em Andamento</span>
+                </div>
 
-            <section class="section-block" id="mercado">
-                <h3>Mercado da Bola</h3>
                 <div class="grid-container">
                     <article class="card">
-                        <span class="tag tag-blue">Transferências</span>
-                        <h4>Astro europeu entra na mira de clube brasileiro</h4>
-                        <p class="post-meta">Há 3 horas</p>
-                        <p>Especulações esquentam a janela de transferências com negociações milionárias...</p>
+                        <span class="tag tag-purple">Liderança</span>
+                        <h4>Palmeiras segura pressão no Barradão e consolida ponta da tabela</h4>
+                        <p class="post-meta">Há 3 horas • Por Gabriel Santos</p>
+                        <p>Mesmo após revés na rodada anterior, o Alviverde reagiu fora de casa e manteve a vantagem sobre o vice-líder Flamengo na disputa pelo título nacional.</p>
+                        <a href="#tabela" class="card-link">Ver Tabela Completa →</a>
                     </article>
+
                     <article class="card">
-                        <span class="tag tag-blue">Renovação</span>
-                        <h4>Promessa da base renova contrato por mais 5 anos</h4>
-                        <p class="post-meta">Há 5 horas</p>
-                        <p>Jovem talento assegura permanência com multa rescisória recorde...</p>
+                        <span class="tag tag-blue">Maracanã</span>
+                        <h4>Fluminense domina o Bahia e se firma no G-4 da competição</h4>
+                        <p class="post-meta">Há 4 horas • Por Mariana Lima</p>
+                        <p>Com grande exibição do setor de meio-campo, a equipe das Laranjeiras garantiu mais três pontos essenciais no campeonato.</p>
+                        <a href="#tabela" class="card-link">Detalhes do Jogo →</a>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag tag-yellow">Neo Química Arena</span>
+                        <h4>Corinthians recebe o Athletico-PR de olho na zona de classificação</h4>
+                        <p class="post-meta">Hoje às 19h30 • Pré-Jogo</p>
+                        <p>Com ajustes no esquema tático, o Timão busca engrenar uma sequência vitoriosa diante do Furacão em duelo direto.</p>
+                        <a href="#brasileirao" class="card-link">Acompanhar Pré-Jogo →</a>
                     </article>
                 </div>
             </section>
 
-            <section class="section-block" id="selecao">
-                <h3>Seleção Brasileira</h3>
-                <article class="card main-card">
-                    <span class="tag tag-yellow">Convocação</span>
-                    <h4>Técnico divulga lista atualizada para os próximos amistosos</h4>
-                    <p class="post-meta">Ontem</p>
-                    <p>Confira os convocados, as novidades entre os relacionados e os nomes que ficaram de fora da lista oficial para os jogos preparatórios.</p>
-                </article>
-            </section>
+            <section class="section-block" id="champions">
+                <div class="section-header">
+                    <h3>Champions League & Europa</h3>
+                    <span class="subtitle">Temporada 2026/2027</span>
+                </div>
 
-            <section class="section-block" id="opiniao">
-                <h3>Opinião & Tática</h3>
-                <article class="card">
-                    <span class="tag tag-purple">Análise Tática</span>
-                    <h4>Como a pressão alta mudou a forma moderna de jogar futebol</h4>
-                    <p class="post-meta">Há 2 dias</p>
-                    <p>Uma análise profunda sobre a evolução do futebol contemporâneo e como os grandes treinadores estão moldando o esporte atualmente.</p>
-                </article>
-            </section>
+                <div class="grid-container">
+                    <article class="card">
+                        <span class="tag tag-blue">Sorteio</span>
+                        <h4>UEFA define novos confrontos da fase de liga da Champions</h4>
+                        <p class="post-meta">Ontem • Futebol Internacional</p>
+                        <p>Grandes clássicos europeus foram sorteados para as primeiras rodadas. Confira a ordem dos duelos e as datas oficiais.</p>
+                        <a href="#champions" class="card-link">Veja os Grupos →</a>
+                    </article>
 
-        </main>
-
-        <aside class="sidebar">
-            
-            <div class="widget">
-                <h3>Tabela do Campeonato</h3>
-                <table class="league-table">
-                    <thead>
-                        <tr>
-                            <th>Pos</th>
-                            <th>Time</th>
-                            <th>Pts</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>1</td><td>Time A</td><td>45</td></tr>
-                        <tr><td>2</td><td>Time B</td><td>42</td></tr>
-                        <tr><td>3</td><td>Time C</td><td>39</td></tr>
-                        <tr><td>4</td><td>Time D</td><td>38</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="widget newsletter">
-                <h3>Resenha Semanal</h3>
-                <p>Receba as melhores notícias do futebol no seu e-mail toda segunda-feira.</p>
-                <form onsubmit="event.preventDefault(); alert('Inscrição realizada!');">
-                    <input type="email" placeholder="Seu melhor e-mail" required>
-                    <button type="submit" class="btn-yellow">Inscrever-se</button>
-                </form>
-            </div>
-
-        </aside>
-
-    </div>
-
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-info">
-                <h3>FUT<span>CENTRAL</span></h3>
-                <p>O seu portal definitivo sobre o mundo do futebol.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="#inicio">Voltar ao Topo</a></li>
-                    <li><a href="#brasileirao">Brasileirão</a></li>
-                    <li><a href="#champions">Champions League</a></li>
-                    <li><a href="#mercado">Mercado da Bola</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 FutCentral. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+                    <article class="card">
+                        <span class="tag
