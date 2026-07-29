@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header class="main-header">
+    <header class="main-header" id="inicio">
         <div class="logo">
             <h1>FUT<span>CENTRAL</span></h1>
         </div>
@@ -20,12 +20,12 @@
 
     <nav class="main-nav">
         <ul>
-            <li><a href="index.html" class="active">Início</a></li>
-            <li><a href="brasileirao.html">Brasileirão</a></li>
-            <li><a href="champions.html">Champions League</a></li>
-            <li><a href="mercado.html">Mercado da Bola</a></li>
-            <li><a href="selecao.html">Seleção Brasileira</a></li>
-            <li><a href="opiniao.html">Opinião</a></li>
+            <li><a href="#inicio" class="active">Início</a></li>
+            <li><a href="#brasileirao">Brasileirão</a></li>
+            <li><a href="#champions">Champions League</a></li>
+            <li><a href="#mercado">Mercado da Bola</a></li>
+            <li><a href="#selecao">Seleção Brasileira</a></li>
+            <li><a href="#opiniao">Opinião</a></li>
         </ul>
     </nav>
 
@@ -33,50 +33,60 @@
         
         <main class="content-area">
             
-            <section class="featured-post">
-                <span class="tag tag-yellow">Destaque</span>
+            <section class="featured-post" id="champions">
+                <span class="tag tag-yellow">Champions League</span>
                 <h2>Final da Champions League: O que esperar do grande confronto do ano</h2>
                 <p class="post-meta">Publicado em 20 de Outubro • Por Lucas Silva</p>
                 <p class="excerpt">Análise tática completa das equipes, os principais jogadores a serem observados e os palpites dos nossos especialistas para a decisão.</p>
-                <a href="champions.html" class="btn-read">Ler Matéria Completa</a>
+                <a href="#opiniao" class="btn-read">Ler Matéria Completa</a>
             </section>
 
-            <section class="posts-grid">
-                <h3>Últimas Notícias</h3>
-                
+            <section class="section-block" id="brasileirao">
+                <h3>Brasileirão Série A</h3>
+                <article class="card main-card">
+                    <span class="tag tag-purple">Rodada Decisiva</span>
+                    <h4>Rodada eletrizante altera a liderança do campeonato</h4>
+                    <p class="post-meta">Há 2 horas</p>
+                    <p>Com tropeço do líder fora de casa, a disputa pelo título fica ainda mais aberta na reta final. Confira as notas dos jogadores e os lances mais polêmicos da rodada.</p>
+                </article>
+            </section>
+
+            <section class="section-block" id="mercado">
+                <h3>Mercado da Bola</h3>
                 <div class="grid-container">
                     <article class="card">
-                        <span class="tag tag-blue">Mercado</span>
-                        <h4>Grande astro europeu entra na mira de clube brasileiro</h4>
-                        <p class="post-meta">Há 2 horas</p>
-                        <p>Especulações esquentam a janela de transferências neste fim de temporada...</p>
-                        <a href="mercado.html">Leia mais →</a>
+                        <span class="tag tag-blue">Transferências</span>
+                        <h4>Astro europeu entra na mira de clube brasileiro</h4>
+                        <p class="post-meta">Há 3 horas</p>
+                        <p>Especulações esquentam a janela de transferências com negociações milionárias...</p>
                     </article>
-
                     <article class="card">
-                        <span class="tag tag-purple">Brasileirão</span>
-                        <h4>Rodada decisiva altera a liderança do campeonato</h4>
+                        <span class="tag tag-blue">Renovação</span>
+                        <h4>Promessa da base renova contrato por mais 5 anos</h4>
                         <p class="post-meta">Há 5 horas</p>
-                        <p>Com tropeço do líder fora de casa, a disputa pelo título fica ainda mais aberta...</p>
-                        <a href="brasileirao.html">Leia mais →</a>
-                    </article>
-
-                    <article class="card">
-                        <span class="tag tag-blue">Seleção</span>
-                        <h4>Técnico divulga convocação para os próximos amistosos</h4>
-                        <p class="post-meta">Ontem</p>
-                        <p>Confira a lista completa dos convocados e as principais novidades do grupo...</p>
-                        <a href="selecao.html">Leia mais →</a>
-                    </article>
-
-                    <article class="card">
-                        <span class="tag tag-purple">Tática</span>
-                        <h4>Como a pressão alta mudou o jeito moderno de jogar</h4>
-                        <p class="post-meta">Há 2 dias</p>
-                        <p>Uma análise profunda sobre a evolução do futebol contemporâneo...</p>
-                        <a href="opiniao.html">Leia mais →</a>
+                        <p>Jovem talento assegura permanência com multa rescisória recorde...</p>
                     </article>
                 </div>
+            </section>
+
+            <section class="section-block" id="selecao">
+                <h3>Seleção Brasileira</h3>
+                <article class="card main-card">
+                    <span class="tag tag-yellow">Convocação</span>
+                    <h4>Técnico divulga lista atualizada para os próximos amistosos</h4>
+                    <p class="post-meta">Ontem</p>
+                    <p>Confira os convocados, as novidades entre os relacionados e os nomes que ficaram de fora da lista oficial para os jogos preparatórios.</p>
+                </article>
+            </section>
+
+            <section class="section-block" id="opiniao">
+                <h3>Opinião & Tática</h3>
+                <article class="card">
+                    <span class="tag tag-purple">Análise Tática</span>
+                    <h4>Como a pressão alta mudou a forma moderna de jogar futebol</h4>
+                    <p class="post-meta">Há 2 dias</p>
+                    <p>Uma análise profunda sobre a evolução do futebol contemporâneo e como os grandes treinadores estão moldando o esporte atualmente.</p>
+                </article>
             </section>
 
         </main>
@@ -105,7 +115,7 @@
             <div class="widget newsletter">
                 <h3>Resenha Semanal</h3>
                 <p>Receba as melhores notícias do futebol no seu e-mail toda segunda-feira.</p>
-                <form>
+                <form onsubmit="event.preventDefault(); alert('Inscrição realizada!');">
                     <input type="email" placeholder="Seu melhor e-mail" required>
                     <button type="submit" class="btn-yellow">Inscrever-se</button>
                 </form>
@@ -124,9 +134,10 @@
             <div class="footer-links">
                 <h4>Links Rápidos</h4>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="brasileirao.html">Brasileirão</a></li>
-                    <li><a href="opiniao.html">Contato / Opinião</a></li>
+                    <li><a href="#inicio">Voltar ao Topo</a></li>
+                    <li><a href="#brasileirao">Brasileirão</a></li>
+                    <li><a href="#champions">Champions League</a></li>
+                    <li><a href="#mercado">Mercado da Bola</a></li>
                 </ul>
             </div>
         </div>
