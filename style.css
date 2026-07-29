@@ -164,4 +164,467 @@ body {
 .main-nav a {
     color: var(--branco);
     text-decoration: none;
-    padding
+    padding: 1rem 1.3rem;
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover, 
+.main-nav a.active {
+    background-color: var(--azul-principal);
+    color: var(--amarelo-destaque);
+}
+
+/* ==========================================================================
+   LAYOUT PRINCIPAL
+   ========================================================================== */
+.container {
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2.6fr 1fr;
+    gap: 2.5rem;
+}
+
+/* Ajuste de scroll para as âncoras do menu ficarem alinhadas */
+.section-block, .featured-banner, .sidebar {
+    scroll-margin-top: 90px;
+}
+
+/* ==========================================================================
+   DESTAQUE PRINCIPAL (BANNER)
+   ========================================================================== */
+.featured-banner {
+    background: linear-gradient(135deg, var(--roxo-medio), var(--azul-principal));
+    color: var(--branco);
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--sombra-card);
+    position: relative;
+}
+
+.featured-badge {
+    background-color: var(--amarelo-destaque);
+    color: var(--roxo-escuro);
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.featured-banner h2 {
+    font-size: 2.1rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+}
+
+.featured-banner .post-meta {
+    color: #d1d5db;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.featured-banner .excerpt {
+    font-size: 1.05rem;
+    margin-bottom: 1.8rem;
+    color: #f3f4f6;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--amarelo-destaque);
+    color: var(--roxo-escuro);
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--amarelo-hover);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   SEÇÕES DE CONTEÚDO
+   ========================================================================== */
+.section-block {
+    margin-bottom: 3rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--azul-principal);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+    font-size: 1.6rem;
+    color: var(--roxo-escuro);
+    font-weight: 800;
+}
+
+.section-header .subtitle {
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+    font-weight: 600;
+}
+
+/* GRID DE CARDS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--branco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--borda-cor);
+    box-shadow: var(--sombra-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card.main-card {
+    border-left: 5px solid var(--azul-principal);
+}
+
+.card h4 {
+    font-size: 1.15rem;
+    color: var(--texto-escuro);
+    margin: 0.8rem 0;
+    line-height: 1.4;
+}
+
+.card p {
+    font-size: 0.92rem;
+    color: var(--texto-suave);
+    margin-bottom: 1.2rem;
+}
+
+.card-link {
+    color: var(--azul-principal);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.card-link:hover {
+    color: var(--roxo-medio);
+}
+
+/* LISTA DE NOTÍCIAS */
+.news-list {
+    background: var(--branco);
+    border-radius: 8px;
+    border: 1px solid var(--borda-cor);
+    padding: 1rem 1.5rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--borda-cor);
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-content h4 {
+    font-size: 1.05rem;
+    color: var(--texto-escuro);
+    margin-bottom: 0.3rem;
+}
+
+.list-content p {
+    font-size: 0.88rem;
+    color: var(--texto-suave);
+}
+
+/* TAGS */
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.tag-yellow { background-color: var(--amarelo-destaque); color: var(--roxo-escuro); }
+.tag-blue { background-color: var(--azul-claro); color: var(--azul-principal); }
+.tag-purple { background-color: #f0e6ff; color: var(--roxo-medio); }
+
+/* ==========================================================================
+   SIDEBAR (BARRA LATERAL)
+   ========================================================================== */
+.widget {
+    background: var(--branco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--borda-cor);
+    margin-bottom: 2rem;
+    box-shadow: var(--sombra-card);
+}
+
+.widget h3 {
+    font-size: 1.2rem;
+    color: var(--roxo-escuro);
+    border-bottom: 2px solid var(--azul-claro);
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+/* TABELA DE CLASSIFICAÇÃO */
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+.league-table th, 
+.league-table td {
+    padding: 0.55rem 0.4rem;
+    text-align: center;
+    border-bottom: 1px solid var(--borda-cor);
+}
+
+.league-table th {
+    background-color: #f9fafb;
+    color: var(--texto-suave);
+    font-weight: 700;
+}
+
+.league-table td:nth-child(2) {
+    text-align: left;
+    font-weight: 600;
+}
+
+.league-table tr.g4 { background-color: #f0fdf4; }
+.league-table tr.z4 { background-color: #fef2f2; }
+
+.table-legend {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    margin-top: 0.8rem;
+    color: var(--texto-suave);
+    font-weight: 600;
+}
+
+.leg-g4 { color: #16a34a; }
+.leg-z4 { color: #dc2626; }
+
+/* ENQUETE & NEWSLETTER */
+.poll-question {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.poll-option {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    border: none;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--azul-escuro);
+}
+
+.newsletter {
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+}
+
+.newsletter h3 {
+    color: var(--amarelo-destaque);
+    border-bottom: none;
+}
+
+.newsletter p {
+    font-size: 0.88rem;
+    color: #d1d5db;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 1rem 0 0.6rem 0;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.btn-accent {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--amarelo-destaque);
+    color: var(--roxo-escuro);
+    border: none;
+    border-radius: 4px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-accent:hover {
+    background-color: var(--amarelo-hover);
+}
+
+.podcast-widget .btn-outline {
+    display: block;
+    text-align: center;
+    border: 2px solid var(--azul-principal);
+    color: var(--azul-principal);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.6rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: all 0.3s;
+}
+
+.podcast-widget .btn-outline:hover {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+.main-footer {
+    background-color: #110424;
+    color: var(--branco);
+    padding: 3.5rem 5% 1.5rem 5%;
+    margin-top: 4rem;
+    border-top: 4px solid var(--azul-principal);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2.5rem;
+}
+
+.footer-col h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-col h3 span {
+    color: var(--amarelo-destaque);
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--amarelo-destaque);
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-col a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: var(--amarelo-destaque);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MOBILE & TABLETS)
+   ========================================================================== */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav a {
+        padding: 0.8rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .featured-banner h2 {
+        font-size: 1.6rem;
+    }
+}
